@@ -1,0 +1,87 @@
+    1  passwd
+    2  pwd
+    3  pwd
+    4  echo $SHELL
+    5  echo $"Hello"
+    6  man more
+    7  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+    8  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+    9  Install brew : /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   10  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   11  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+   12   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+   13  CI
+   14  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+   15  tail -f file
+   16  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+   17  $ls
+   18  $ ls
+   19  -help
+   20  q
+   21  -help
+   22  -h
+   23  $man more
+   24  man more
+   25  % ls
+   26  spotify %ls
+   27  % ls
+   28  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+   29  % ls
+   30  ls
+   31  rm spotify-2023.csv.1
+   32   ls
+   33  rm spotify-2023.csv.2
+   34  view 
+   35  view spotify-2023.csv
+   36  wget www.github.com
+   37  history > cmds.log
+   38  cd ~/Desktop
+   39  mkdir myproject
+   40  cd myproject/
+   41  git init
+   42  cd ~Desktop
+   43  mkdir myproject
+   44  cd myproject/
+   45  git init
+   46  cd~
+   47  git status
+   48  cd ~/myproject
+   49  ls
+   50  ls myproject
+   51  cd myproject/
+   52  touch testfile.txt
+   53  ls
+   54  git status
+   55  git commit -m "Your message about the commit
+   56  My first commit
+   57  q
+   58  q!
+   59   
+   60  exit
+   61  wq
+   62  cd myproject/
+   63  ls
+   64  git status
+   65  git add
+   66  git add testfile.txt
+   67  git status
+   68  git add <myproject>
+   69  git add myproject
+   70  git status
+   71  git add myproject/
+   72  git commit -m "Your message about the commit
+   73  :q!
+   74  cd myproject/
+   75  git status
+   76  cd myproject/
+   77  git status
+   78  git add --all
+   79  ls
+   80  touch cmg.logs
+   81  ls
+   82  history > cmds.log
+   83  ls
+   84  rm cmds.log
+   85  ls
+   86  rm cmg.logs
+   87  history > cmds.log

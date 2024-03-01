@@ -1,0 +1,7 @@
+2) I used echo $SHELL and got /bin/bash2
+2) I used echo $HOME and got /mnt/scratch/FA23_CS131_Ashish/jimmysp24
+3) It says that my uid is 1166 and my group is the same. I used the id command
+4) No because I removed that permission by using the chmod command
+6) The total amount of Memory is 71367 mebibytes
+9) You would check this in os-release file. However I do not have permission
+10) The permission given to everyone is lrwxrwxrwx.

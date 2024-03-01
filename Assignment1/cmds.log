@@ -1,0 +1,20 @@
+ 1) mkdir ~/Assignment1
+    cd ~/Assignment1
+ 2) echo $SHELL
+ 2) echo $HOME
+ 3) id
+ 4) mkdir ~/Assignment1/myDir
+    chmod u-w ~/Assignment1/myDir
+ 5) mkdir ~/Assignment1/myDir2
+    mkdir ~/Assignment1/myDir3
+ 6) touch ~/Assignment1/myDir2/myFile.txt
+    mv ~/Assignment1/myDir2/myFile.txt ~/Assignment1/myDir3/
+ 6) free -m
+   ls myDir3
+ 10) ls -l /etc/os-release
+   vi answers.txt
+ 9) /etc/os-release
+   ls -l /etc/os-release
+   vi answers.txt
+   history > cmds.log
+   vi cmds.log

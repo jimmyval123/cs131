@@ -1,0 +1,54 @@
+1a. We are looking through /etc to find files. The output will go to one.txt
+    and the errors will go to two.txt
+1b. one.txt showed all the file paths and two.txt was empty
+
+2. 15 2006,Mar
+     13 2014,Jul
+     12 2014,Aug
+ cut -d ',' -f 20,21 "Global YouTube Statistics.csv" | tail -n +2 | sort |
+ uniq -c | sort -nr | head -3
+   cut gets the 2 columns needed
+   tail skips the first line
+   uniq gets all the unique combinations for month and year
+   sort sorts the number of times the combination happens from highest to
+   lowest
+   head displays the top 3
+
+3. PID TTY          TIME CMD
+3497612 ?        00:00:00 systemd
+3497614 ?        00:00:00 (sd-pam)
+3497622 ?        00:00:00 sshd
+3497623 pts/27   00:00:00 bash
+3501004 pts/27   00:00:00 ps
+
+4b.PID TTY          TIME CMD
+3497612 ?        00:00:02 systemd
+3497614 ?        00:00:00 (sd-pam)
+3497622 ?        00:00:00 sshd
+3497623 pts/27   00:00:00 bash
+3515901 ?        00:00:00 sshd
+3515902 pts/32   00:00:00 bash
+3519030 pts/32   00:00:00 vim
+3519250 pts/27   00:00:00 ps
+
+I noticed that there were more processes going on. The ID for vim is 3519030
+
+4d. PID TTY          TIME CMD
+3497612 ?        00:00:03 systemd
+3497614 ?        00:00:00 (sd-pam)
+3497622 ?        00:00:00 sshd
+3497623 pts/27   00:00:00 bash
+3515901 ?        00:00:00 sshd
+3515902 pts/32   00:00:00 bash
+3522281 pts/27   00:00:00 ps
+
+Vim process is now gone. It's gone because I closed it.
+
+5.3854249 3519897 3511452 3509567 3508332 3504877 3504542 3497612 3491745
+ 3433756 3312757 3304023 2808486 2492008 2422345 2379540 2248654 2073814
+ 2060795 105881 86087 1
+I used pidof systemd
+
+6. ps aux shows all the processes running on the system. It also shows CPU
+   and memory as well as which users are using said processes. It shows
+   start times and commands being executed as well

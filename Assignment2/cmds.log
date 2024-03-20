@@ -1,0 +1,19 @@
+1) find /etc -type f > one.txt 2> two.txt
+   cat one.txt
+   cat two.txt
+
+2) cut -d',' -f20,21 data.csv | sort | uniq -c | sort -nr | head -3
+
+3) ps -u jimmysp24
+
+4) vi file.txt
+   ps -u jimmysp24
+   ps -u jimmysp24
+
+5) pidof systemd
+
+6) ps aux
+
+   nano Assignment2.txt
+   history > cmds.log
+   nano cmds.log

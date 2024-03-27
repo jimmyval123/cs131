@@ -1,0 +1,13 @@
+Task 1
+cut -d ',' -f8,16 'Global YouTube Statistics.csv' > country_earnings.csv
+grep 'United States' country_earnings.csv | sort -t ',' -k2nr | head -n1 > highest_month.txt
+grep 'United Kingdom' country_earnings.csv | sort -t ',' -k2nr | head -n1 >> highest_month.txt
+grep 'India' country_earnings.csv | sort -t ',' -k2nr | head -n1 >> highest_month.txt
+cat highest_month.txt
+
+Task 2
+cut -d ',' -f5,3 'Global YouTube Statistics.csv' > category_subs.csv
+grep 'Sports' category_subs.csv | sort -t ',' -k 2 -n -r | head -n 1 > high_subs.txt
+grep 'Education' category_subs.csv | sort -t ',' -k 2 -n -r | head -n 1 >> high_subs.txt
+grep 'Entertainment' category_subs.csv | sort -t ',' -k 2 -n -r | head -n 1 >> high_subs.txt
+cat high_subs.txt

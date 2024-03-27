@@ -1,0 +1,9 @@
+Task 1
+United States,9200000
+United Kingdom,2000000
+India,9000000
+
+Task 2
+96000000,Sports
+68200000,Education
+98900000,Entertainment

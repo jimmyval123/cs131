@@ -1,0 +1,17 @@
+Task 1
+nano ~/.bashrc
+alias l='ls -ltr'
+alias w='ls -l | wc -l'
+source ~/.bashrc
+1
+w
+
+Task 2
+mkdir -p worksheet4/Subscribers
+cut -d ',' -f3,8 'Global YouTube Statistics.csv' > country_subs.csv
+grep 'United States' country_subs.csv > worksheet4/Subscribers/United_States.txt
+grep 'India' country_subs.csv > worksheet4/Subscribers/India.txt
+mean_us=$(awk '{ total += $1; count++ } END { print total/count }' worksheet4/Subscribers/United_States.txt)
+echo "United States Average: $mean_us" >> worksheet4/ws4_means.txt
+mean_india=$(awk '{ total += $1; count++ } END { print total/count }' worksheet4/Subscribers/India.txt)
+echo "India Average: $mean_india" >> worksheet4/ws4_means.txt

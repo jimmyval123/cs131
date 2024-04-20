@@ -1,0 +1,23 @@
+Task 1
+ wc -l last.fake
+ grep 'sp24' last.fake > lastsp24.fake
+ wc -l lastsp24.fake
+Task 2
+ echo "The list of people who worked on Sunday are:"
+ grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq
+ echo "Kudos to these people for putting in the work"
+Task 3
+ echo "Night Owls List:"
+ awk '{split($7,a,":"); if (a[1] >= 23 || a[1] <= 4) print $1}' lastsp24.fake | sort | uniq
+ echo "Night Owls are dope. Please ensure you get enough sleep though."
+Task 4
+ echo "Early Birds List:"
+ awk '{split($7,a,":"); if (a[1] >= 5 && a[1] <= 9) print $1}' lastsp24.fake | sort | uniq
+ echo "Early Birds are dope. Please ensure you get enough sleep though."
+Task 5
+ echo "Users with username starting with 't':"
+ awk -F: '$1 ~ /^t/ {print $1}' passwd.fake | sort | uniq
+Task 6
+ awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake | sort | uniq
+Task 7
+ sed 's/[[:alnum:][:space:]]//g' passwd.fake | sort -u
